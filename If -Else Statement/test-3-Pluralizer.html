@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        function pluralize(noun, number) { // Write a function named pluralize that takes 2 arguments, a noun 
+        //     and a number.
+            if (number != 1 && noun != 'sheep' && noun != 'geese') { //returns the number and pluralized form, 
+                // like "5 cats" or "1 dog".
+        
+                return number + ' ' + noun + 's';
+            } else {
+                return number + ' ' + noun;
+            }
+        }
+        
+        // Call that function for a few different scores and log the result to make sure it works.
+        //Bonus: Make it handle a few collective nouns like "sheep" and "geese".
+        
+        alert ('I have ' + pluralize('cat', 0));
+        alert ('I have ' + pluralize('cat', 1));
+        alert ('I have ' + pluralize('cat', 2));
+        
+        
+        //console.log('I have ' + pluralize('cat', 0));
+        //console.log('I have ' + pluralize('cat', 1));
+        //console.log('I have ' + pluralize('cat', 2));
+        
+        
+        
+        
+        </script>
+        
+        
+         
+</body>
+</html>
+

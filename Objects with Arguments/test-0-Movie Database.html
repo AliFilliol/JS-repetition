@@ -1,0 +1,56 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        /*Create an object to store the following information about your favorite movie: 
+        title (a string), duration (a number), and stars (an array of strings).
+        Create a function to print out the movie information like so: 
+        "Puff the Magic Dragon lasts for 30 minutes. Stars: Puff, Jackie, Living Sneezes."*/
+        
+        let myFavMovie = {
+            title: 'Puff the Magic Dragon',
+            duration: 30,
+            stars: ['Puff', 'Jackie', 'Living Sneezes']
+        };
+        
+        function printMovie(movie) {
+            alert (movie.title + ' lasts for ' + movie.duration + ' minutes');
+            
+            //console.log(movie.title + ' lasts for ' + movie.duration + ' minutes');
+            let starsString = 'Stars: ';
+            for (var i = 0; i < movie.stars.length; i++) {
+                starsString += movie.stars[i];
+                if (i != movie.stars.length -1) {
+                    starsString += ', ';
+                }
+            }
+            
+            alert (starsString);
+        }
+            //console.log(starsString);
+        
+        
+        // Or...
+        function printMovie(movie) {
+            
+            alert (movie.title + ' lasts for ' + movie.duration + ' minutes');
+            //console.log(movie.title + ' lasts for ' + movie.duration + ' minutes');
+            
+            alert ('It stars ' + movie.stars.join(', '));
+            //console.log('It stars ' + movie.stars.join(', '));
+        }
+        printMovie(myFavMovie);
+         
+            
+        </script>
+</body>
+</html>
+

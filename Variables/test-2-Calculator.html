@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+   <meta charset="UTF-8">
+   <meta http-equiv="X-UA-Compatible" content="IE=edge">
+   <meta name="viewport" content="width=device-width, initial-scale=1.0">
+   <title>The Lifetime Supply Calculator</title>
+</head>
+<body>
+    
+    <script>
+
+
+let age = 51; //Store your current age into a variable.
+let maxAge = 100; //Store a maximum age into a variable.
+let numPerDay = 3; // Store an estimated amount per day (as a number).
+let totalNeeded = (numPerDay * 365) * (maxAge - age);// Calculate how many you would eat total for the rest of your life.
+
+
+//Output the result to the screen like so: "You will need NN to last you until the ripe old age of X".
+let message = 'You will need ' + totalNeeded + ' cups of tea to last you until the ripe old age of ' + maxAge;
+
+alert (message);
+//console.log(message);
+
+        
+        
+    </script>
+</body>
+</html>  

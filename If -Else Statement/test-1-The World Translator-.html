@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+        function helloWorld(lang) { //Write a function named helloWorld that takes 1 argument
+            if (lang == 'fr') { //a language code (e.g. "es", "de", "en")
+        
+                return 'Bonjour tout le monde'; //returns "Hello, World" for the given language, for atleast 3 languages.
+            } else if (lang == 'es') {
+                return 'Hola, Mundo';
+            } else {                    //It should default to returning English.
+                return 'Hello, World';
+            }
+        }
+        
+        // Call that function for each of the supported languages and log the result to make sure it works.
+        
+        alert (helloWorld('en'));
+        alert (helloWorld('fr'));
+        alert (helloWorld('es'));
+        //console.log(helloWorld('en'));
+        //console.log(helloWorld('fr'));
+        //console.log(helloWorld('es'));
+        
+        </script>  
+</body>
+</html>
+
+
+

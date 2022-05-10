@@ -1,0 +1,39 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Show those cities in the Website that has LESS than 3000000 inhabitants</p>
+
+
+<script src="/js/tools.js"></script>
+<script>
+    // This script requieres the tools.js file.
+
+    function execute () {
+        // Set list of city objects.
+        let cities = [
+            {name: 'Los Angeles', population: 3792621},
+            {name: 'New York', population: 8175133},
+            {name: 'Chicago', population: 2695598},
+            {name: 'Houston', population: 7099451},
+            {name: 'Philadelphia', population:1526006 },
+             ];
+
+        // Filter the big cities with LESS than 3 million inhabitants - using an arrow function.
+        let bigCities = cities.filter((city) => city.population < 3000000);       
+        
+        for (let i = 0; i < citties.lenght; i++) {
+            if (citites[i].population > 3000000) {
+                bigCities.push(cities[i]);
+            }
+
+        }
+    
+    }
+    display("BigCities", bigCities);
+
+</script>

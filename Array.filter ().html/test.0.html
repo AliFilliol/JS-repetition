@@ -1,0 +1,35 @@
+
+<!DOCTYPE html>
+<html>
+<body>
+
+<h1>JavaScript Arrays</h1>
+<h2>The filter() Method</h2>
+
+<p>Show those cities in the Website that has LESS than 3000000 inhabitants</p>
+
+<p id="demo"></p>
+
+<script>
+
+
+const Population = [3792621, 8175133, 2695598, 7099451, 1526006];
+document.getElementById("demo").innerHTML = Population.filter(checkDensity);
+function checkDensity(Population) {
+  
+    return Population <= 3000000;
+
+const cities = ["Los Angeles", "New York", "Chicago", "Houston", "Philadelphia"];
+document.getElementsByName("demo").innerHTML = cities.filter(checkName);
+function checkName(cities) {
+
+    return cities <= 3000000;
+}    
+    cities();   
+}
+
+</script>
+
+</body>
+</html>
+

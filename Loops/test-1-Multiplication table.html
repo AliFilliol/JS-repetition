@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <script>
+
+
+        // Multiplication tables
+        
+        let multiplier = 9;  // Write a for loop that will iterate from 0 to 10.
+        for (let i = 0; i <= 10; i++) {
+            let result = multiplier * i; // For each iteration of the for loop, it will multiply the number by 9 
+                                         //and log the result (e.g. "2 * 9 = 18").
+        alert (multiplier + ' * ' + i + ' = ' + result);
+            //console.log(multiplier + ' * ' + i + ' = ' + result);
+        }
+        
+        ////Bonus: Use a nested for loop to show the tables for every multiplier from 1 to 10 (100 results total).
+        
+        for (let multiplier = 0; multiplier <= 10; multiplier++) {
+        for (let i = 0; i <= 10; i++) {
+           var result = multiplier * i;
+           alert (multiplier + ' * ' + i + ' = ' + result);
+           //console.log(multiplier + ' * ' + i + ' = ' + result);
+         }
+        }
+        
+        
+        </script> 
+</body>
+</html>

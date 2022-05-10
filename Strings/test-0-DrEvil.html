@@ -1,0 +1,31 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Document</title>
+</head>
+<body>
+  <script>
+
+    //DrEvil(10): 10 dollars
+    //DrEvil(1000000): 1000000 dollars (pinky)
+    
+    function drEvil(amount) { //Create a function called DrEvil with a single argument, an amount
+      if (amount == 1000000) { 
+        return amount + " dollars (pinky)"; //and return '<amount> dollars' except it will add '(pinky)
+      } else {
+        return amount + " dollars"; //at the end if the amount is 1 million
+      }
+    }
+    
+    alert (drEvil(1000));
+    
+    </script>
+</body>
+</html>
+
+
+
